@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>FunFolio Sample Website</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="assets/logo.svg" alt="logo" />
+        <h2>BeachKing</h2>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-link"><a href="#home">Home</a></li>
+          <li class="header__nav-link"><a href="#trips">Trips</a></li>
+          <li class="header__nav-link"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="header__cta">
+          <a class="site-button" href="#meet-me">Meet Me</a>
+        </div>
+      </nav>
+    </header>
+    <div class="page-wrapper">
+      <div class="content-wrapper">
+        <main class="hero" id="home">
+          <div class="hero__text">
+            <h3>The name's</h3>
+            <h1>BeachKing</h1>
+            <h3>And I'll tell you why...</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              aliquid temporibus ducimus eveniet ex, a est quisquam odit dolorem
+              magnam, officia nulla soluta deleniti exercitationem animi
+              possimus harum saepe eligendi.
+            </p>
+            <div class="hero__cta-buttons">
+              <a href="#" class="site-button">Read more</a>
+              <a href="#" class="site-button">Plan a trip</a>
+            </div>
+          </div>
+          <div class="hero__img-container">
+            <div class="hero__bg-circle"></div>
+            <div class="hero-img-box">
+              <img src="assets/hero-img.png" alt="" />
+            </div>
+          </div>
+        </main>
+
+        <section class="stats">
+          <div class="stats__item">
+            <div class="stats__item-icon">
+              <img src="assets/stats-icon-1.svg" alt="" />
+            </div>
+            <div class="stats__item-text">
+              <h3>100+</h3>
+              <p>Trips to beaches</p>
+            </div>
+          </div>
+          <div class="stats__item">
+            <div class="stats__item-icon">
+              <img src="assets/stats-icon-2.svg" alt="" />
+            </div>
+            <div class="stats__item-text">
+              <h3>50+</h3>
+              <p>Countries Visited</p>
+            </div>
+          </div>
+          <div class="stats__item">
+            <div class="stats__item-icon">
+              <img src="assets/stats-icon-2.svg" alt="" />
+            </div>
+            <div class="stats__item-text">
+              <h3>100+</h3>
+              <p>Parties on beaches</p>
+            </div>
+          </div>
+          <div class="stats__item">
+            <div class="stats__item-icon">
+              <img src="assets/stats-icon-2.svg" alt="" />
+            </div>
+            <div class="stats__item-text">
+              <h3>Countless</h3>
+              <p>Friends Made</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="trips" id="trips">
+          <div class="trips__menu">
+            <div class="trips__menu-text">
+              <h2>Trips</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+                aliquid temporibus ducimus eveniet ex, a est quisquam odit
+                dolorem magnam, officia nulla soluta deleniti exercitationem
+                animi possimus harum saepe eligendi.
+              </p>
+            </div>
+            <div class="trips__menu-img-toggle-container">
+              <div class="trips__menu-selection active" data-category="all">
+                All
+              </div>
+              <div class="trips__menu-selection" data-category="beaches">
+                Beaches
+              </div>
+              <div class="trips__menu-selection" data-category="resorts">
+                Resorts
+              </div>
+              <div class="trips__menu-selection" data-category="islands">
+                Islands
+              </div>
+            </div>
+          </div>
+          <div class="trips__img-grid">
+            <div class="trips__img-wrapper" data-category="beaches">
+              <img src="assets/beach-imgs/1.jpg" alt="" />
+            </div>
+            <div class="trips__img-wrapper" data-category="resorts">
+              <img src="assets/beach-imgs/2.jpg" alt="" />
+            </div>
+            <div class="trips__img-wrapper" data-category="resorts">
+              <img src="assets/beach-imgs/3.jpg" alt="" />
+            </div>
+            <div class="trips__img-wrapper" data-category="islands">
+              <img src="assets/beach-imgs/4.jpg" alt="" />
+            </div>
+            <div class="trips__img-wrapper" data-category="beaches">
+              <img src="assets/beach-imgs/5.jpg" alt="" />
+            </div>
+            <div class="trips__img-wrapper" data-category="islands">
+              <img src="assets/beach-imgs/6.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="contact" id="contact">
+          <div class="contact__text">
+            <h2>Contact</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              aliquid temporibus ducimus eveniet ex, a est quisquam odit dolorem
+              magnam, officia nulla soluta deleniti exercitationem animi
+              possimus harum saepe eligendi.
+            </p>
+          </div>
+          <div class="contact__form-container">
+            <form>
+              <input type="text" placeholder="Enter your name" />
+              <input type="text" placeholder="Enter your email" />
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Enter your message"
+              ></textarea>
+              <button type="submit" class="site-button" id="contactSubmit">
+                Submit
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <section class="cta-section" id="meet-me">
+          <div class="cta-section__text">
+            <h2>Join the fun!</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              aliquid temporibus ducimus eveniet ex, a est quisquam odit dolorem
+              magnam, officia nulla soluta deleniti exercitationem animi
+              possimus harum saepe eligendi.
+            </p>
+          </div>
+          <div class="cta-section__button-wrapper">
+            <a href="#" class="site-button">See Next Available Meetup</a>
+          </div>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <p class="footer__text">
+          Copyright &copy; 2024.
+          <span
+            >Created by
+            <a href="https://github.com/izzymadethat">Isaiah Vickers</a></span
+          >
+        </p>
+        <div class="footer__social-icons">
+          <a href="#"><i class="bx bxl-meta bx-lg"></i></a>
+          <a href="#"><i class="bx bxl-twitter bx-lg"></i></a>
+          <a href="#"><i class="bx bxl-instagram bx-lg"></i></a>
+          <a href="#"><i class="bx bxl-youtube bx-lg"></i></a>
+        </div>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
